@@ -22,6 +22,6 @@ FF1 : entity work.JK_Flipflop port map (clk,'1','1',Q1,Qbar1,reset);
 FF2 : entity work.JK_Flipflop port map (clk,Q1,Q1,Q2,Qbar2,reset);
 FF3 : entity work.JK_Flipflop port map (clk,J3,J3,Q3,Qbar3,reset);
 FF4 : entity work.JK_Flipflop port map (clk,J4,J4,Q4,Qbar4,reset);
-counter <= Q4 & Q3 & Q2 & Q1; 
+counter <= Q4 & Q3 & Q2 & Q1; //output for synchronous UP counter
 
 end Behavioral;
